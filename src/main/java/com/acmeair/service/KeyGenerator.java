@@ -21,6 +21,13 @@ import java.util.Random;
 public class KeyGenerator {
 
   public Object generate() {
-    return java.util.UUID.randomUUID().toString();
+    char[] chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
+    StringBuilder sb = new StringBuilder();
+    Random random = new Random();
+    for (int i = 0; i < 6; i++) {
+        char c = chars[random.nextInt(chars.length)];
+        sb.append(c);
+    }
+    return "booking number " + sb.toString();
   }
 }
