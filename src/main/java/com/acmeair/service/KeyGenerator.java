@@ -19,6 +19,6 @@ package com.acmeair.service;
 public class KeyGenerator {
 
   public Object generate() {
-    return java.util.UUID.randomUUID().toString();
+    return "booking number " + java.util.UUID.randomUUID().toString();
   }
 }
