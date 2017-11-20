@@ -21,7 +21,7 @@ import java.util.Random;
 public class KeyGenerator {
 
   public Object generate() {
-    char[] chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
+    char[] chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
     StringBuilder sb = new StringBuilder();
     Random random = new Random();
     for (int i = 0; i < 6; i++) {
